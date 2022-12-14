@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<title>Password</title>
+
+
+
+
+</head>
+
+<body>
+  
+    <p> Please enter password to view the website:</p>
+    <p> Password: <input id="passwordBox" type="password"/>
+    <a href="http://www.beyonce.com" onclick="return confirmPassword();">
+      Click Here to Enter Website! </a>
+    </p>
+  
+    <script>
+  function confirmPassword() {
+    var password = document.getElementById("passwordBox");
+    var passwordText = password.value;
+    if (passwordText == "Kendra"){
+      return true;
+    }
+    alert ("Access denied! Incorrect Password");
+    return false;
+  } 
+      </script>
+    
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
